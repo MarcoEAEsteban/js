@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando la Edad</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Verificando la Edad</h1>
+    </header>
+    <section>
+        <div>
+            Cual es tu fecha de nacimiento! <input type="number" name="ano" id="ano">
+            Sexo: <input type="radio" name="sex" id="masculino" checked>
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="sex" id="femenino">
+            <label for="femenino">Femenino</label>
+        </div>
+    
+        <div>
+            <input type="button" value="Evaluar" onclick="evaluar()">
+        </div>
+        <div id="res">
+            Insiera las obciones
+        </div>
+        <div id="fondo">
+            <img src="fondo.jpg" id="imagen" alt="portada">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Marco Aucaruri</p>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

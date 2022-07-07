@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area{
+            font: normal 20pt Arial;
+            background: rgb(51, 149, 51);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="area">
+    <!--   
+    <div id = "area"onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> //esto es para usar en html
+    -->
+        interaccion
+    </div>
+
+
+    <script>
+
+        var a = window.document.getElementById('area')
+        a.addEventListener('click',clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar(){
+            a.innerText = 'clico'
+            a.style.background = "red"
+        }
+        function entrar(){
+            a.innerText = 'Entro'
+            a.style.background = "yellow"
+        }
+        function sair(){
+            a.innerText = 'Salio'
+            a.style.background = "blue"
+        }
+
+    </script>
+</body>
+</html>

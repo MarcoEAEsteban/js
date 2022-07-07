@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDAD</title>
+</head>
+<body>
+    <h1>Cual es su Pais</h1>
+    De que pais Usted es <input type="text" name="tna" id="tna">
+    <input type="button" value="Revisar" onclick="verificar()">
+    <div id="info"></div>
+
+    <script>
+        function verificar(){
+            var nom = window.document.querySelector('input#tna')
+            var ver = window.document.getElementById('info')
+            //var pais = nom.value.toUpperCase()
+            ver.innerHTML = `Viviendo en <strong>${nom.value}</strong>`
+            if(nom.value.toUpperCase()!= 'BRASIL'){
+                ver.innerHTML += `<p>Usted es <strong>Extrangero</strong><p>`
+            }else{
+                ver.innerHTML += `<p>Usted es <strong>Brasilero</strong></p>`
+            }
+        }
+
+    </script>
+</body>
+</html>
